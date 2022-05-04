@@ -1,0 +1,26 @@
+/* Creación de base de datos */
+CREATE DATABASE `dblogin`
+
+/* Creación de base de tabla login */
+CREATE TABLE `dblogin`.`login` 
+( `id_login` INT NOT NULL AUTO_INCREMENT,
+`correo` VARCHAR(255) NOT NULL, 
+`contrasena` VARCHAR(255) NOT NULL , PRIMARY KEY (`id_login`)) 
+ENGINE = InnoDB;
+
+/* insertar datos en tabla */
+INSERT INTO `login`(`correo`, `contrasena`) VALUES ('prueba@hotmail.com','123456');
+INSERT INTO `login`(`correo`, `contrasena`) VALUES ('prueba@gmail.com','12345');
+
+
+/* Creación de base de tabla user */
+CREATE TABLE `dblogin`.`user` 
+( `id_user` INT NOT NULL AUTO_INCREMENT,
+`pais` VARCHAR(255) NOT NULL, 
+`estado` VARCHAR(255) NOT NULL ,
+`genero` VARCHAR(1) NOT NULL,
+`id_login` INT NOT NULL,
+PRIMARY KEY (`id_user`)) 
+ENGINE = InnoDB;
+
+INSERT INTO `user` (`id_user`, `pais`, `estado`, `genero`, `id_login`) VALUES (NULL, 'México', 'CDMX', 'F', '1'), (NULL, 'Alemania', 'Leipzing', 'M', '2');

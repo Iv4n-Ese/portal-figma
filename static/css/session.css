@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{    
+    color: #000;    
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+}
+
+a{
+    color: #667085;
+    text-decoration: none;    
+}
+
+ul{
+    list-style: none;
+}
+
+.content{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+/* navigator */
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand{
+    width: 32px;
+}
+.nav-brand-footer{
+    width: 25px;
+}
+
+/* nav left */
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a{
+    padding: 1px;
+
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* colored */
+.selected{
+    background: #175cd31e;
+}
+.selected a{
+    color: #175CD3;
+}
+
+/* table */
+table{    
+    width: 100%;
+    margin: 35px auto;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+thead{
+    background: #F9FAFB;
+    color: #667085;
+    height: 44px;
+}
+
+tbody{
+    height: 44px;
+    text-align: left;
+}
+
+tr .principal{    
+    width: 60%;
+}
+tr td{
+    border-bottom: 2px solid #F9FAFB;
+}
+.search{
+    width: 100%;    
+    margin: 2em auto;
+    display: block;
+}
+
+.search-btn{
+    width: 55%;
+    display: inline-flex;
+}
+
+.search-btn .filter{
+    height: 40px;    
+    width: 102px;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid rgb(190, 190, 190);
+    color: rgb(90, 88, 88);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+}
+
+.filter img{
+    width: 15px;
+    height: 10px;    
+    position: relative;
+}
+
+.second{
+    width: 25.5%;
+}
+
+.second input{
+    height:  44px;
+    width: 320px;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(90, 88, 88);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 8px;    
+}
+.third{
+    width: 18%;
+}
+
+.third input{
+    background: #1570EF;
+    height: 44px;
+    width: 145px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    color: #fff;    
+}
+
+/* pagination */
+.pagination{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.message{
+
+    width: 32.8%;
+    display: inline-block;    
+}
+
+.previous input, .next input{
+    height: 40px;
+    width: 102px;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid rgb(190, 190, 190);
+    color: rgb(90, 88, 88);
+    border-radius: 8px;
+}
+
+.count{
+    text-align: center;
+    color: rgb(90, 88, 88);
+}
+
+.next{
+    text-align: right;
+}
